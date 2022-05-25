@@ -1,7 +1,7 @@
 {
   "name": "basiclogin",
   "version": "0.1.0",
-  "homepage": "https://rayvivek.github.io/basicloginfront",
+  "homepage": "https://rayvivek881.github.io/basicloginfront",
   "private": true,
   "proxy": "https://basic70login.herokuapp.com",
   "dependencies": {
