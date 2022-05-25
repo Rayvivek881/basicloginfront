@@ -8,7 +8,7 @@ export const GlobalProvider = ({ children }) => {
         setstate({...data});
     }
     const GetData = async () => {
-        const result = await axios.get('/home/Home', {});
+        const result = await axios.get('https://basic70login.herokuapp.com/home/Home', {});
         setData(result.data.UserData);
         console.log("GlobalContext in GetData........\n", state);
     }
@@ -23,4 +23,4 @@ export const GlobalProvider = ({ children }) => {
             {children}
         </GlobalContext.Provider>
     )
-}
+};

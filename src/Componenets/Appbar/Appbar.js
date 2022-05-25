@@ -110,7 +110,7 @@ export default function PrimarySearchAppBar() {
             <MenuItem onClick={handleMenuClose}>My account</MenuItem>
             <MenuItem onClick={() => {
                 if (Name) {
-                    axios.get('/user/Logout', {});
+                    axios.get('https://basic70login.herokuapp.com/user/Logout', {});
                     setData({});
                     history('/');
                 }

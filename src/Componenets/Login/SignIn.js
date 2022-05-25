@@ -45,7 +45,7 @@ export default function SignIn() {
             Email: data.get('Email'),
             Password: data.get('Password'),
         };
-        const result = await axios.post('/user/SignIn', obj);
+        const result = await axios.post('https://basic70login.herokuapp.com/user/SignIn', obj);
         setData(result.data.UserData);
         console.log(Name);
         history('/');

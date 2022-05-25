@@ -40,7 +40,7 @@ export default function SignUp() {
             Password: data.get('password'),
             Name: data.get('firstName') + " " + data.get('lastName'),
         };
-        const result = await axios.post('/user/SignUp', obj);
+        const result = await axios.post('https://basic70login.herokuapp.com/user/SignUp', obj);
         console.log(result);
         history('/SignIn');
     };
